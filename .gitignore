@@ -307,3 +307,4 @@ storybook-static
 
 # project
 !Icon
+*storybook.log
