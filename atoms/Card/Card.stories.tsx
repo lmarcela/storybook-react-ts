@@ -1,7 +1,8 @@
 import React from "react";
-import Card from ".";
+import Card, { styles } from ".";
 import { Meta, StoryFn } from '@storybook/react';
 import { CardProps } from "./types";
+import { getTemplate } from "../../helpers/storybook";
 
 export default {
     title: "Atoms/Card",
@@ -21,7 +22,7 @@ export default {
 } as Meta;
 
 
-const Template: StoryFn<CardProps> = (args) => <Card {...args} />;
+const Template: StoryFn<CardProps> = getTemplate(Card, styles);
 
 export const Default = Template.bind({});
 Default.args = {
