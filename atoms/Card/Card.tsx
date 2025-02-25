@@ -1,6 +1,7 @@
 import React from "react";
 import classNames from "classnames";
-import "./Card.css";
+import styles from "./Card.module.css";
+import { CardProps } from "./types";
 
 export const Card = ({
   onClick,
@@ -13,12 +14,15 @@ export const Card = ({
   return (
     <div
       onClick={onClick}
-      className={classNames("card", {
-        [`color-${color}`]: color,
-        [`size-${size}`]: size,
-        "is-clickable": isClickable,
-        "is-draggable": isDraggable,
-      })}
+      className={classNames(
+        styles.card,
+        styles[`color-${color}`],
+        styles[`size-${size}`],
+        {
+          [styles["is-clickable"]]: isClickable,
+          [styles["is-draggable"]]: isDraggable,
+        }
+      )}
     >
       {children}
     </div>
