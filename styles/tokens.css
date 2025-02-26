@@ -1,17 +1,20 @@
 :root {
-    --color-base-transparent: transparent;
-    --color-gray-300: #e2e8f0;
-  
-    --box-shadow-sm: 0px 4px 5px rgba(0, 0, 0, 0.07);
-    --box-shadow-xs: 0px 3px 6px rgba(0, 0, 0, 0.05);
-  
-    --border-width-thin: 1px;
-  
-    --color-primary: #9879e9;
-    --color-primary-inverted: #fff;
-    --color-secondary: #eb2d52;
-    --color-secondary-inverted: #fff;
-    --color-font-base: #455970;
-  
-    --card-border-radius: 10px;
-  }
+  --color-base-transparent: transparent;
+  --color-gray-300: #e2e8f0;
+
+  --box-shadow-sm: 0px 4px 5px rgba(0, 0, 0, 0.07);
+  --box-shadow-xs: 0px 3px 6px rgba(0, 0, 0, 0.05);
+
+  --border-width-thin: 1px;
+
+  --color-primary: #9879e9;
+  --color-primary-inverted: #fff;
+  --color-secondary: #eb2d52;
+  --color-secondary-inverted: #fff;
+  --color-font-base: #455970;
+
+  --card-border-radius: 10px;
+
+  --border-radius-full: 9999px;
+  --picture-border: 1px solid #7e858c;
+}

@@ -15,20 +15,20 @@ const preview = {
   },
 };
 
-const styles: CSSProperties = {
-  display: "flex",
-  flexDirection: "column",
-  maxHeight: "auto",
-  justifyContent: "flex-start",
-  alignContent: "flex-start",
-  flexWrap: "wrap",
-  height: "100%",
-  gap: "10px 30px",
-};
+const getStyles = ({ __sb }) => ({
+  display: 'flex',
+  flexDirection: __sb?.fd || 'column' as "column",
+  maxHeight: __sb?.mh || 'auto',
+  justifyContent: 'flex-start',
+  alignContent: 'flex-start',
+  flexWrap: 'wrap' as "wrap",
+  height: '100%',
+  gap: '10px 30px',
+});
 
 export const decorators = [
-  (Story) => (
-    <div style={styles}>
+  (Story, { parameters }) => (
+    <div style={getStyles(parameters)}>
       <Story />
     </div>
   ),

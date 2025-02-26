@@ -3,7 +3,7 @@ import styles from "./Card.module.css";
 import { CardProps } from "./types";
 import withStyles from "../../hocs/withStyles";
 
-export const Card = ({
+const Card = ({
   getStyles,
   onClick,
   isClickable,
